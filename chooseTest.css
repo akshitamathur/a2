@@ -31,17 +31,19 @@
 }
 
 #logistics{
-   
+   margin-left: 6%;
 }
 
 #linguistics{
     font-size: 1.5em !important;
-}
-
-#visual{
-
+    margin-left: 8%;
 }
 
 #social{
-
+    margin-left: 18%;
 }
+
+#visual{
+    margin-left: 17%;
+}
+
