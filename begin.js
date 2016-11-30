@@ -1,6 +1,6 @@
 function go() {
     location.href = "chooseTest.html"
-};
+}
 
  function getCookie(cname) { //Generally do not edit this function!
      var name = cname + "=";

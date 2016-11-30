@@ -1,4 +1,4 @@
-#backgroundImage {
+/*#backgroundImage {
     background-image: url('images/gameShow.png');
     background-color: black;
     background-repeat: repeat-x;
@@ -24,8 +24,6 @@
 .knowledgeBoxText{
     text-align: center;
     vertical-align: middle;
-    /*line-height: 130px;*/
-    /*margin-left:57px;*/
     font-family: 'Bungee Inline', sans-serif;
     font-size: 1.2em;
 }
@@ -44,3 +42,129 @@
     
 }
 
+*/
+
+
+#backgroundImage {
+    background-image: url('images/gameShow.png');
+    background-color: black;
+    background-repeat: repeat-x;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.boxes{
+    margin-left: 10%;
+}
+
+.qboxes{
+    margin-left: 10%;
+}
+
+.aboxes{
+    margin-left: 10%;
+}
+
+.knowledgeBox{
+    height: 130px;
+    width: 766px;
+    background-color: lightgray;
+    border: 8px solid black;
+    margin: 25 10 10 10;
+}
+
+.knowledgeBoxText{
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: 130px;*/
+    /*margin-left:57px;*/
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 1.2em;
+}
+
+.questionBox{
+    height: 130px;
+    width: 766px;
+    background-color: lightgray;
+    border: 8px solid black;
+    margin: 25 10 10 10;
+}
+
+.answerBox{
+    height: 130px;
+    width: 766px;
+    background-color: lightgray;
+    border: 8px solid black;
+    margin: 30 10 10 10;
+}
+
+.questionBoxText{
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: 130px;*/
+    /*margin-left:57px;*/
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 1.2em;
+}
+
+.answerBoxText{
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: 130px;*/
+    /*margin-left:57px;*/
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 1.2em;
+}
+
+.goButton{
+    padding: 10px 20px 11px;
+    margin-left: 39%;
+    margin-top:12%;
+    font-size: 21px;
+    background-color: mint;
+    color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid green;
+    cursor: pointer;
+    
+}
+
+#checkButton{
+    padding: 10px 20px 11px;
+    margin-left: 39%;
+    margin-top:12%;
+    font-size: 21px;
+    background-color: mint;
+    color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid green;
+    cursor: pointer;
+    
+}
+
+.score{
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    /*line-height: 130px;*/
+    /*margin-left:57px;*/
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+}
+
+.results{
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    /*line-height: 130px;*/
+    /*margin-left:57px;*/
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 2em;
+    color: lightblue;
+    font-weight: bold;
+}
