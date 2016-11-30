@@ -39,6 +39,10 @@ The function sets a cookie by adding together the cookiename, the cookie value, 
 (from http://www.w3schools.com/js/js_cookies.asp)
 */
 };
+function startGame() {
+    location.href = "begin.html";
+}
+
 function submitFunction()
 {
 	
