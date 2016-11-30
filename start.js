@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 //window.onload = function opening(){
 //alert("The javascript is loading");
 //
@@ -30,10 +31,46 @@
      document.cookie = cookieString;
       //go to next page
  }
+=======
+window.onload = function opening(){
+alert("The javascript is loading");
+
+var username = prompt("Please enter your name: ");
+if (username !== "" && username !== " " && username !== null){
+//ensure something reasonable is in username
+	alert("Hi, " + username + " .");
+}else {  //if something reasonable is not in username, set username to something
+	alert("Okay, Anonymous!");
+	username = "Anonymous";
+}
+
+setCookie("theusersname", username, 30);
+
+
+
+// window.location.replace("file:///Users/Akshita/GitHub/a2/chooseTest.html");
+
+
+
+//Only edit the following function if necessary:
+function setCookie(cname,cvalue,exdays) {  // receives 3 values to set cookie
+    var d = new Date();
+    //d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    d.setTime(d.getTime() + (exdays*1000)); //sets in seconds, not days
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+     //go to next page
+}
+
+>>>>>>> Stashed changes
 
 function startGame() {
+<<<<<<< Updated upstream
     submitFunction();
     window.location.replace("begin.html");
+=======
+    location.href = "file:///Users/Akshita/GitHub/a2/chooseTest.html";
+>>>>>>> Stashed changes
 }
 
 function submitFunction()
