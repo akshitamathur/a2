@@ -10,7 +10,8 @@
 }
 
 .boxes{
-    margin-left: 10%;
+    /*margin-left: 10%;*/
+    float: left;
 }
 
 .knowledgeBox{
@@ -18,7 +19,7 @@
     width: 215px;
     background-color: lightgray;
     border: 8px solid black;
-    margin: 25 10 10 10;
+    margin: 17 10 10 10;
 }
 
 .knowledgeBoxText{
@@ -43,7 +44,7 @@
     margin-left: 18%;
 }
 
-#visual{
-    margin-left: 17%;
+#music{
+    margin-left: 21%;
 }
 
