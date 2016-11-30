@@ -1,6 +1,6 @@
-window.onload = function opening(){
-alert("The javascript is loading");
-
+//window.onload = function opening(){
+//alert("The javascript is loading");
+//
 // var username = prompt("Please enter your name: ");
 // if (username !== "" && username !== " " && username !== null){
 // //ensure something reasonable is in username
@@ -9,45 +9,38 @@ alert("The javascript is loading");
 // 	alert("Okay, Anonymous!");
 // 	username = "Anonymous";
 // }
-
-// setCookie("theusersname", username, 30);
-
+//
+//
 // // var gender
-
+//
 // // alert("Please Select Gender:");
-
-
+//
+//
 // // window.location.replace("file:///Users/Akshita/Desktop/Fall%202016/DATT%201939/a2/ottawa.html");
 // };
 
 
 
-// //Only edit the following function if necessary:
-// function setCookie(cname,cvalue,exdays) {  // receives 3 values to set cookie
-//     var d = new Date();
-//     //d.setTime(d.getTime() + (exdays*24*60*60*1000));
-//     d.setTime(d.getTime() + (exdays*1000)); //sets in seconds, not days
-//     var expires = "expires=" + d.toGMTString();
-//     document.cookie = cname+"="+cvalue+"; "+expires;
-//      //go to next page
-// }
+ //Only edit the following function if necessary:
+ function setCookie(cookieString,exdays) {  // receives 3 values to set cookie
+     var d = new Date();
+     //d.setTime(d.getTime() + (exdays*24*60*60*1000));
+     d.setTime(d.getTime() + (exdays*1000)); //sets in seconds, not days
+     var expires = "expires=" + d.toGMTString();
+     document.cookie = cookieString;
+      //go to next page
+ }
 
-
-/* "The parameters of the function above are the name of the cookie (cname), the value of the cookie (cvalue) [which is the information you are saving in the cookie], and the number of days[/minutes/seconds] until the cookie should expire (exdays).
-
-The function sets a cookie by adding together the cookiename, the cookie value, and the expires string." 
-(from http://www.w3schools.com/js/js_cookies.asp)
-*/
-};
 function startGame() {
-    location.href = "begin.html";
+    submitFunction();
+    window.location.replace("begin.html");
 }
 
 function submitFunction()
 {
 	
 	var textstring = '';
-
+    var cookieString = '';
 	for (i=0;i<2;i++) {
 		var box = document.forms["contestantForm"].elements[i];
 		if (!box.value) {
@@ -55,15 +48,19 @@ function submitFunction()
 			return;
 		}
 		textstring += box.name + ": " + box.value + "\n";
+        cookieString += box.name+"="+box.value+"; ";
 	}
 
 	// Get value of the 'Why' radio buttons.
 
 	user_input = '';
-	for (i=0;i<document.forms['contestantForm'].why.length;i++) {
-		if (document.forms['contestantForm'].why[i].checked) {
-			user_input = document.forms['contestantForm'].why[i].value;
+    var why = document.forms['contestantForm'].why;
+	for (i=0;i<why.length;i++) {
+		if (why[i].checked) {
+			user_input = why[i].value;
+            cookieString += "val"+i+"="+why[i].value+"; ";
 		}
+        
 	}
 	textstring += 'I am taking the test because ' + user_input + '\n';
 
@@ -71,17 +68,21 @@ function submitFunction()
 
 	user_input = document.contestantForm.birthday.options[document.contestantForm.birthday.selectedIndex].value;
 	textstring += 'My favourite season is the ' + user_input + '\n';
+    cookieString += "season="+user_input+"; ";
 
 	// See what checkboxes are checked. They are elements 9-12
 
 	textstring += 'My hobbies include ';
+    var elements = document.contestantForm.elements;
 	for (i=7;i<13;i++){
-		if (document.contestantForm.elements[i].checked) {
-			textstring += document.contestantForm.elements[i].name + ' ';
+		if (elements[i].checked) {
+			textstring += elements[i].name + ' ';
+            cookieString += "hobby"+i+"="+elements[i].name+"; ";
 		}
 	}
 
 	// Write textstring to the textarea.
+    setCookie(cookieString, 5000);
 
 	document.forms['contestantForm'].output.value = textstring;
 }
