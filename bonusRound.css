@@ -21,6 +21,10 @@
     margin: 25 10 10 10;
 }
 
+.knowledgeBoxLarge {
+    height: 245px;
+}
+
 .knowledgeBoxText{
     text-align: center;
     vertical-align: middle;
@@ -44,3 +48,49 @@
     
 }
 
+.taps {
+    width: 30%;
+    margin-left: 17%;
+}
+
+.tap5 {
+    margin-top: 75px;
+    width: 20%;
+    height: 12%;
+}
+
+.tap3 {
+    margin-top: 75px;
+    width: 20%;
+    height: 12%;
+    float: right;
+}
+
+.jugs {
+    width: 60%;
+}
+
+.jug5 {
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.jug3 {
+    float: right;
+    margin-top: 30px;
+    margin-right: 4%
+}
+
+.empty5 {
+    float: left;
+}
+
+
+.empty3 {
+    float: right;
+}
+
+.actions {
+    width: 50%;
+    margin-top: 10px;
+}
