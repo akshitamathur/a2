@@ -5,6 +5,50 @@
 	<script type="text/javascript" src="start.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 
+
+<script>
+	
+
+// //Only edit the following function if necessary:
+// function setCookie(cname,cvalue,exdays) {  // receives 3 values to set cookie
+//     var d = new Date();
+//     //d.setTime(d.getTime() + (exdays*24*60*60*1000));
+//     d.setTime(d.getTime() + (exdays*1000)); //sets in seconds, not days
+//     var expires = "expires=" + d.toGMTString();
+//     document.cookie = cname+"="+cvalue+"; "+expires;
+// }
+// //  "The parameters of the function above are the name of the cookie (cname), the value of the cookie (cvalue) [which is the information you are saving in the cookie], and the number of days[/minutes/seconds] until the cookie should expire (exdays).
+
+// // The function sets a cookie by adding together the cookiename, the cookie value, and the expires string." 
+// // (from http://www.w3schools.com/js/js_cookies.asp)
+
+
+
+
+// function whichwastouched(datasent) {
+    
+//     if (datasent == "one" || datasent == "two" || datasent == "three") {
+// 		//alert(datasent);
+		
+// 		setCookie("pg2pgwhichtouch", datasent, 10);  
+//     	// save the data into the cookie "pg2pgwhichtouch", cookie expires in 10 seconds 
+    
+//   		// window.location.replace("file:///Users/Akshita/GitHub/a2/begin.html"); //go to next page
+		
+//     } else {
+//     	alert("Error!");
+//     }
+    
+// } //end function whichwastouched
+
+
+
+
+</script>
+
+
+
+
 </head>
 <body id="backgroundImage">
 
@@ -30,23 +74,62 @@
 
 
 	 <div class="boxes" id="tv2" style="visibility: hidden;">
-		<div class="introBox">
+		<div class="introBox" id="intro">
 			<p class="introBoxText" id="nameValue"></p>
 			<!-- <p class="introBoxText" id="ageValue"></p> -->
 			<p class="introBoxText" id="whyValue"></p>
 			<p class="introBoxText" id="hobbyValue"></p>
 			<p class="introBoxText"></p>
+			<!-- <p class="introBoxText">Just one more question though...</p> -->
+			<button class="nextButton" onclick="next();">just one more question...</button>
 		</div>
 	</div>
 
-		<div class="anchor" id="anchor2">
+
+		<div class="anchor" id="anchor2" >
 		<img src="images/Anchor.png">
+		</div>
+
+	
+
+<!-- <div id="finalQuestion" style="visitbility: hidden;">	
+<a href="#"
+	onmousedown="finalQuestion('novice'); return true;"><img id="novice" src="images/1.gif" width="100" height="100" alt="novice"></a>
+<br><br>
+<a href="#"
+	onmousedown="finalQuestion('confident'); return true;"><img id="confident" src="images/2.gif" width="100" height="100" alt="confident"></a>
+<br><br>
+<a href="#"
+	onmousedown="finalQuestion('genius'); return true;"><img id="genius" src="images/3.gif" width="100" height="100" alt="genius"></a>
+<br><br>
+</div> -->
+
+<div class="boxes" id="pictures" style="visibility: hidden;">
+		<div class="introBox">
+			<p id="text">How Smart Are You?</p>
+						<a href="#" onmousedown="finalQuestion('novice'); return true;"><img id="novice" src="images/novice.png" width="100" height="100" alt="novice"> I'm not really smart...</a>
+<br><br>
+			<a href="#" onmousedown="finalQuestion('confident'); return true;"><img id="confident" src="images/confident.png" width="100" height="100" alt="confident"> I'm smart!</a>
+<br><br>
+			<a href="#" onmousedown="finalQuestion('genius'); return true;"><img id="genius" src="images/genius.png" width="100" height="100" alt="genius">I. Am. A. Genius.</a>
+<br><br>
+		</div>
 	</div>
 
 	
 
 
 
+<!--  <div id="finalQuestion" style="visibility: hidden;">
+		<div class="introBox">
+			<a href="#" onmousedown="finalQuestion('novice'); return true;"><img id="novice" src="images/1.gif" width="100" height="100" alt="novice"></a>
+<br><br>
+			<a href="#" onmousedown="finalQuestion('confident'); return true;"><img id="confident" src="images/2.gif" width="100" height="100" alt="confident"></a>
+<br><br>
+			<a href="#" onmousedown="finalQuestion('genius'); return true;"><img id="genius" src="images/3.gif" width="100" height="100" alt="genius"></a>
+<br><br>
+		</div>
+</div> -->
 
 
 <!-- 
