@@ -18,8 +18,9 @@
 }
 
 #backgroundImage {
-    background-image: url('images/indexBackground.png');
-    background-repeat: repeat-x;
+    /*background-image: url('images/Logo.png');*/
+    background-repeat: no-repeat;
+    /*background-color: black;*/
     overflow-y: hidden;
     overflow-x: hidden;
     /*animation: slideleft 600s infinite linear;*/
@@ -27,6 +28,8 @@
     width: 100%;
     height: 100%;
     z-index: -10;
+    margin: 0;
+    padding: 0;
 }
 
 /*.logo{
@@ -61,8 +64,9 @@
 .menu{
     width: 50%;
     height: 48%;
+    z-index:10;
     /*background-color: white;*/
-    margin-top: 10%;
+    margin-top: -33%;
     margin-left: 27%;
     /*background-image: url('images/translucentWhite.png');*/
     /*opacity:0.2;*/
@@ -92,3 +96,30 @@ a:hover{
     color:white;
 }
 
+
+.startButton{
+    padding: 10px 57px 11px;
+    margin-left: 12%;
+    margin-bottom: 5%;
+    font-size: 21px;
+    background-color: orange;
+    color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid chocolate;
+    cursor: pointer;
+    
+}
+
+.helpButton{
+    padding: 10px 64px 11px;
+    margin-left: 11%;
+    font-size: 21px;
+    background-color: orange;
+    color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid chocolate;
+    cursor: pointer;
+    
+}

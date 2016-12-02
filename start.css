@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
 #backgroundImage {
     background-image: url('images/gameShow.png');
     background-color: black;
@@ -9,22 +14,115 @@
     z-index: -10;
 }
 
-.form{
-    width: 50%;
-    color: white;
-    height: 85%;
-    /*background-color: white;*/
-    margin-top: 5%;
-    margin-left: 27%;
-    /*z-index:10;*/
-    /*opacity:0.6;*/
-    /*background-image: url('images/indexLogo.png');*/
+.boxes{
+    margin-left: 2%;
+    float: left;
 }
 
-td{
-    color: white;
-}
-tr{
-    color: white;
+.tvBox{
+    height: 400px;
+    width: 550px;
+    /*background-color: lightgray;*/
+    /*background-image: url('images/Logo.png');*/
+    border: 35px solid black;
+    margin: 20px 10 10 0;
 }
 
+.tvBoxText{
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: 130px;*/
+    /*margin-left:57px;*/
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 1.2em;
+}
+
+
+.anchor{
+    float: right;
+    margin-top:-45%;
+}
+
+.startBox{
+    height: 150px;
+    width: 850px;
+    background-color: lightgray;
+    /*background-image: url('images/Logo.png');*/
+    border: 15px solid black;
+    margin: 0 0 0 30;
+}
+
+.startBoxText{
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: 130px;*/
+    /*margin-left:57px;*/
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 1.2em;
+}
+
+.introBox{
+    height: 400px;
+    width: 550px;
+    background-color: lightgray;
+    /*background-image: url('images/Logo.png');*/
+    border: 35px solid black;
+    margin: 20px 10 10 0;
+    padding-top: 95px;
+}
+
+.introBoxText{
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: 130px;*/
+    /*margin-left:57px;*/
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 1.2em;
+}
+
+.nextButton{
+    padding: 10px 20px 11px;
+    margin-left: 25%;
+    margin-top:12%;
+    font-size: 21px;
+    background-color: lightpink;
+    color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid pink;
+    cursor: pointer;
+}
+
+#finalQuestion{
+    height: 150px;
+    width: 850px;
+    background-color: lightgray;
+    /*background-image: url('images/Logo.png');*/
+    border: 35px solid black;
+    margin: 20px 10 10 0;
+    padding-top: 95px;
+}
+
+#pictures{
+    margin-top: -60%;
+    margin-left: 18%;
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 1.5em;
+}
+
+#novice{
+margin-left: 10%;
+}
+
+#confident{
+margin-left: 7%;
+}
+
+#genius{
+margin-left: 7%;
+}
+
+#text{
+    margin-top: -10%;
+    margin-left: 4%;
+}
