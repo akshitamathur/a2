@@ -48,3 +48,16 @@
     margin-left: 21%;
 }
 
+.anchor{
+    float: right;
+    margin-top: 5%;
+    margin-right: 8%;
+}
+
+#anchorText{
+margin-left: 30%;
+padding-bottom: 0px;
+margin-bottom: 0px;
+width: 600px;
+padding-left: 60px;
+}

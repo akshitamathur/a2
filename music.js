@@ -25,7 +25,6 @@ function question(){
 	// shows question
 	document.getElementById("question" + count).style.visibility = "visible";
 
-
     // shows answer options
 	document.getElementById("answer" + count).style.visibility = "visible";
 }
