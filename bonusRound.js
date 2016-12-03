@@ -29,4 +29,13 @@ function start() {
     var fiveL = document.getElementById("jug5");
 }
 
+function emptyJug(jug) {
+    console.log(jug);
+    if (jug == 3) {
+        document.getElementById("jug3").src = "images/Jug.png";
+    } else if (jug == 5) {
+        document.getElementById("jug5").src = "images/jug5litres.png";
+    }
+}
+
 //http://www.clipartbest.com/clipart-measuring-jug
