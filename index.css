@@ -1,22 +1,3 @@
-/*body{
-	background-color:lightpink;
-	width:100%;
-	height: 100%;
-	content: url("images/indexBackground.png");
-	margin: 0;
-    z-index: -100;
-}*/
-
-@keyframes slideleft {
-    from {background-position: 0%;}
-    to {background-position: 90000%;}
-}
-
-@-webkit-keyframes slideleft {
-    from {background-position: 0%;}
-    to {background-position: 90000%;}
-}
-
 #backgroundImage {
     /*background-image: url('images/Logo.png');*/
     background-repeat: no-repeat;
@@ -32,52 +13,24 @@
     padding: 0;
 }
 
-/*.logo{
-
-}*/
 
 .logoYellow{
-    /*width: 500px;*/
-    /*height: 400px;*/
-    /*background-color: yellow;*/
     margin-top: 3%;
     margin-left: 41%;
-    /*opacity:0.4;*/
-    /*background-image: url('images/AmazingRaceLogo.png');*/
 }
-
-/*.logoBlack{
-    background-color: black;
-    width: 100%;
-    height: 30%;
-    margin-bottom: 20%;
-}
-
-.logoText{
-    color: yellow;
-    font-size: 4em;
-    font-family: sans-serif;
-}*/
-
-
 
 .menu{
     width: 50%;
     height: 48%;
     z-index:10;
-    /*background-color: white;*/
     margin-top: -33%;
     margin-left: 27%;
-    /*background-image: url('images/translucentWhite.png');*/
-    /*opacity:0.2;*/
 }
 
 .startLink{
     font-size: 2em;
     margin-left:38%;
     color: orange;
-
-    /*font-family: ;*/
 }
 
 .settingsLink{
@@ -95,7 +48,6 @@
 a:hover{
     color:white;
 }
-
 
 .startButton{
     padding: 10px 57px 11px;
@@ -121,5 +73,4 @@ a:hover{
     -webkit-border-radius: 100px;
     border: 1px solid chocolate;
     cursor: pointer;
-    
 }

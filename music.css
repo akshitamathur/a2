@@ -83,7 +83,6 @@
     -webkit-border-radius: 100px;
     border: 1px solid pink;
     cursor: pointer;
-    
 }
 
 #checkButton{
@@ -112,12 +111,40 @@
 }
 
 .results{
-    /*text-align: center;*/
-    /*vertical-align: middle;*/
+    margin-left:100px;
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 2em;
+    color: purple;
+    margin-top: 10%;
+
+    /*font-weight: bold;*/
+}
+.resultsBox{
+    height: 360px;
+    width: 766px;
+    background-color: lightgray;
+    border: 8px solid black;
+    margin: 30 10 10 10;
+}
+
+.resultsBoxText{
+    text-align: center;
+    vertical-align: middle;
     /*line-height: 130px;*/
     /*margin-left:57px;*/
     font-family: 'Bungee Inline', sans-serif;
-    font-size: 2em;
-    color: lightblue;
-    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nextButton{
+    padding: 10px 20px 11px;
+    margin-left: 44.5%;
+    margin-top:2%;
+    font-size: 21px;
+    background-color: lightpink;
+    color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid pink;
+    cursor: pointer;
 }

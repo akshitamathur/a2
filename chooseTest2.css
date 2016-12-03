@@ -31,9 +31,15 @@
     font-size: 2em;
 }
 
+#social{
+    margin-left: 18%;
+    text-decoration: none;
+}
+
 #music{
     margin-left: 21%;
     text-decoration: none;
+    opacity: 0.5;
 }
 
 .anchor{
@@ -48,4 +54,5 @@ padding-bottom: 0px;
 margin-bottom: 0px;
 width: 600px;
 padding-left: 60px;
+font-size: 0.9em;
 }
