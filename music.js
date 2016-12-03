@@ -2,6 +2,24 @@ window.onload = function opening(){
 // alert("The javascript is loading");
 };
 
+// START - Get the user's name and save it in a cookie
+
+// var yourname = prompt("What is your name?"); //get user's name
+// //you might want to put this prompt into a simple while loop, like the example from w10
+
+// if (yourname != "" && yourname != " " && yourname != null) { 
+// //ensure something reasonable is in username
+//   alert("Hi, " + yourname + " .");
+// } else {  //if something reasonable is not in username, set username to something
+//    alert("Okay, Anonymous!");
+//    yourname = "Anonymous"; 
+// }
+
+// setCookie("theusersname", yourname, 30);  
+// // save the data into the cookie: cookiename, data, cookie expiry in 30 seconds
+
+// // END - Get the user's name and save it in a cookie
+
 var count = 1;
 var answers = 5;
 var totalScore = 0;
@@ -132,6 +150,20 @@ function finalResults(){
 }
 
 function nextPage(){
-	// setCookie("musicScore", totalScore, 10);
+  alert(totalScore);
+	setCookie("musicScore", totalScore, 80);
 	window.location.replace("file:///Users/Akshita/GitHub/a2/chooseTest2.html");
 }
+
+//Only edit the following function if necessary:
+function setCookie(cname,cvalue,exdays) {  // receives 3 values to set cookie
+    var d = new Date();
+    //d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    d.setTime(d.getTime() + (exdays*1000)); //sets in seconds, not days
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+
+
+// END - save which image they clicked in a cookie

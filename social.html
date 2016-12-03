@@ -1,21 +1,21 @@
 <html>
 <head>
 	<title>Social Smarts</title>
-	<link rel="stylesheet" type="text/css" href="music.css">
-	<script type="text/javascript" src="music.js"></script>
+	<link rel="stylesheet" type="text/css" href="social.css">
+	<script type="text/javascript" src="social.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 </head>
-<body id="backgroundImage">
 
-	<audio autoplay loop>
+<body id="backgroundImage">
+	<!-- <audio autoplay loop>
   		<source src="sounds/Funky.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
-	</audio>
+	</audio> -->
 
 <div class="boxes" id="description">
 
 	<div class="knowledgeBox">
-		<p class="knowledgeBoxText">Wallflower or social butterfly? <br>Lets find out just how high your social status really is.</p>
+		<p class="knowledgeBoxText">Wallflower or Social Butterfly? <br> Where do you fall on the social scale?</p>
 		<button onclick="start();" class="goButton">LET'S BEGIN</button>
 	</div>
 </div>
@@ -75,16 +75,16 @@
 </div>
 <div class="aboxes" id="answer3" style="visibility: hidden;">
 	<div class="answerBox">
-		<input type="radio" id="id1" name="answer3" value="false"/>
+		<input type="radio" id="id1" name="answer3" value="no"/>
 		<label for="id1" class="answerBoxText">Option A</label><br>
 
-		<input type="radio" id="id2" name="answer3" value="false"/>
+		<input type="radio" id="id2" name="answer3" value="no"/>
 		<label for="id2" class="answerBoxText">Option B</label><br>
 
-		<input type="radio" id="id3" name="answer3" value="true"/>
+		<input type="radio" id="id3" name="answer3" value="yes"/>
 		<label for="id3" class="answerBoxText">Option C</label><br>
 
-		<input type="radio" id="id4" name="answer3" value="false"/>
+		<input type="radio" id="id4" name="answer3" value="no"/>
 		<label for="id4" class="answerBoxText">Option D</label><br>
 	</div>
 
@@ -98,16 +98,16 @@
 </div>
 <div class="aboxes" id="answer4" style="visibility: hidden;">
 	<div class="answerBox">
-		<input type="radio" id="id1" name="answer4" value="false"/>
+		<input type="radio" id="id1" name="answer4" value="no"/>
 		<label for="id1" class="answerBoxText">Option A</label><br>
 
-		<input type="radio" id="id2" name="answer4" value="false"/>
+		<input type="radio" id="id2" name="answer4" value="no"/>
 		<label for="id2" class="answerBoxText">Option B</label><br>
 
-		<input type="radio" id="id3" name="answer4" value="false"/>
+		<input type="radio" id="id3" name="answer4" value="no"/>
 		<label for="id3" class="answerBoxText">Option C</label><br>
 
-		<input type="radio" id="id4" name="answer4" value="true"/>
+		<input type="radio" id="id4" name="answer4" value="yes"/>
 		<label for="id4" class="answerBoxText">Option D</label><br>
 	</div>
 
@@ -121,16 +121,16 @@
 </div>
 <div class="aboxes" id="answer5" style="visibility: hidden;">
 	<div class="answerBox">
-		<input type="radio" id="id1" name="answer5" value="false"/>
+		<input type="radio" id="id1" name="answer5" value="no"/>
 		<label for="id1" class="answerBoxText">Option A</label><br>
 
-		<input type="radio" id="id2" name="answer5" value="false"/>
+		<input type="radio" id="id2" name="answer5" value="no"/>
 		<label for="id2" class="answerBoxText">Option B</label><br>
 
-		<input type="radio" id="id3" name="answer5" value="true"/>
+		<input type="radio" id="id3" name="answer5" value="yes"/>
 		<label for="id3" class="answerBoxText">Option C</label><br>
 
-		<input type="radio" id="id4" name="answer5" value="false"/>
+		<input type="radio" id="id4" name="answer5" value="no"/>
 		<label for="id4" class="answerBoxText">Option D</label><br>
 	</div>
 
@@ -140,6 +140,9 @@
 
 
 <div class="results" id="results" style="visibility:hidden;"></div>
+<button onclick="nextPage();" class="nextButton">Next</button>
+<div id="question6"></div>
+<div id="answer6"></div>
 
 </body>
 </html>
