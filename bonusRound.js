@@ -17,7 +17,7 @@ var inFive = 0, inThree = 0;
 
 function go() {
     var box = document.getElementById("knowledgeBoxText");
-    box.innerHTML = "The rules of this game are simple. You will get 5 minutes to complete the following riddle: <br> Suppose you have 2 jugs. One can measure 5 L and one can measure 3 L. There is a running tap of water. How will you measure 4 L of water using these 2 jugs. You are allowed to fill the jugs using the tap, and transfer water between the jugs. You are constrained to filling up the jugs completely at a time or HINT: by however much is remaining in them. We hope these rules are clear...On your mark, get set..."
+    box.innerHTML = "The rules of this game are simple. You will get 3 minutes to complete the following riddle: <br> Suppose you have 2 jugs. One can measure 5 L and one can measure 3 L. There is a running tap of water. How will you measure 4 L of water using these 2 jugs. You are allowed to fill the jugs using the tap, and transfer water between the jugs. You are constrained to filling up the jugs completely or transfer between jugs by however much is remaining in them. We hope these rules are clear...On your mark, get set..."
     
     box = document.getElementById("knowledgeBox").classList.add("knowledgeBoxLarge");
     
