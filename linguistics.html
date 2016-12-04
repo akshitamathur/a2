@@ -1,34 +1,152 @@
 <html>
 <head>
-	<title>Linguistic Smarts</title>
+	<title>Linguistics Smarts</title>
 	<link rel="stylesheet" type="text/css" href="linguistics.css">
 	<script type="text/javascript" src="linguistics.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 </head>
 <body id="backgroundImage">
 
-<div class="boxes">
+	<audio autoplay loop>
+  		<source src="sounds/Funky.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+<div class="boxes" id="description">
 
 	<div class="knowledgeBox">
 		<p class="knowledgeBoxText">Here lies the directions for the quiz. <br>Or not. <br>You're smart right? <br>Figure it out!</p><br>
-		<button onclick="go();" class="goButton">LET'S BEGIN</button>
+		<button onclick="start();" class="goButton">LET'S BEGIN</button>
 	</div>
-
-	
-<!-- 
-	<div class="knowledgeBox">
-		<a class="knowledgeBoxText" id="linguistics" href="linguistics.html"></a>
-	</div>
-
-	<div class="knowledgeBox">
-		<a class="knowledgeBoxText" id="social" href="social.html"></a>
-	</div>
-
-	<div class="knowledgeBox">
-		<a class="knowledgeBoxText" id="visual" href="visual.html"></a>
-	</div> -->
-
 </div>
+
+<div id="score" class="score" style="visibility: hidden;">0</div>
+
+<div class="qboxes" id="question1" style="visibility:hidden;">
+	<div class="questionBox">
+		<p class="questionBoxText">Question 1: Which is the most popular language in the world?</p>
+	</div>
+</div>
+<div class="aboxes" id="answer1" style="visibility: hidden;">
+	<div class="answerBox">
+		<input type="radio" id="id1" name="answer1" value="no"/>
+		<label for="id1" class="answerBoxText">Hindi</label><br>
+
+		<input type="radio" id="id2" name="answer1" value="no"/>
+		<label for="id2" class="answerBoxText">English</label><br>
+
+		<input type="radio" id="id3" name="answer1" value="yes"/>
+		<label for="id3" class="answerBoxText">Chinese</label><br>
+
+		<input type="radio" id="id4" name="answer1" value="no"/>
+		<label for="id4" class="answerBoxText">Italian</label><br>
+	</div>
+
+	<button onclick="check();" id="checkButton">Next</button>
+</div>
+
+<div class="boxes" id="question2" style="visibility:hidden;">
+	<div class="questionBox">
+		<p class="questionBoxText">Question 2: Which is the correct spelling: "Dining Room" or "Dinning Room"?</p>
+	</div>
+</div>
+<div class="aboxes" id="answer2" style="visibility: hidden;">
+	<div class="answerBox">
+		<input type="radio" id="id1" name="answer2" value="no"/>
+		<label for="id1" class="answerBoxText">Dining Room</label><br>
+
+		<input type="radio" id="id2" name="answer2" value="no"/>
+		<label for="id2" class="answerBoxText">Dinning Room</label><br>
+
+		<input type="radio" id="id3" name="answer2" value="yes"/>
+		<label for="id3" class="answerBoxText">They're both right</label><br>
+
+		<input type="radio" id="id4" name="answer2" value="no"/>
+		<label for="id4" class="answerBoxText">Wait...what?</label><br>
+	</div>
+
+	<button onclick="check();" id="checkButton">Next</button>
+</div>
+
+<div class="boxes" id="question3" style="visibility:hidden;">
+	<div class="questionBox">
+		<p class="questionBoxText">Question 3: What is a phoneme?</p>
+	</div>
+</div>
+<div class="aboxes" id="answer3" style="visibility: hidden;">
+	<div class="answerBox">
+		<input type="radio" id="id1" name="answer3" value="no"/>
+		<label for="id1" class="answerBoxText">the sound of the word itself is the meaning of the word</label><br>
+
+		<input type="radio" id="id2" name="answer3" value="no"/>
+		<label for="id2" class="answerBoxText">a rhyming word</label><br>
+
+		<input type="radio" id="id3" name="answer3" value="yes"/>
+		<label for="id3" class="answerBoxText">a sound used to distinguish the meanings of a word</label><br>
+
+		<input type="radio" id="id4" name="answer3" value="no"/>
+		<label for="id4" class="answerBoxText">the smallest linguistic unit that carries some sort of meaning</label><br>
+	</div>
+
+	<button onclick="check();" id="checkButton">Next</button>
+</div>
+
+<div class="boxes" id="question4" style="visibility:hidden;">
+	<div class="questionBox">
+		<p class="questionBoxText">Question 4: Which language has 4 was that it is written?</p>
+	</div>
+</div>
+<div class="aboxes" id="answer4" style="visibility: hidden;">
+	<div class="answerBox">
+		<input type="radio" id="id1" name="answer4" value="no"/>
+		<label for="id1" class="answerBoxText">Tagalog</label><br>
+
+		<input type="radio" id="id2" name="answer4" value="no"/>
+		<label for="id2" class="answerBoxText">English</label><br>
+
+		<input type="radio" id="id3" name="answer4" value="no"/>
+		<label for="id3" class="answerBoxText">Hindi</label><br>
+
+		<input type="radio" id="id4" name="answer4" value="yes"/>
+		<label for="id4" class="answerBoxText">Japanese</label><br>
+	</div>
+
+	<button onclick="check();" id="checkButton">Next</button>
+</div>
+
+<div class="boxes" id="question5" style="visibility:hidden;">
+	<div class="questionBox">
+		<p class="questionBoxText">Question 5: Which is the oldest language in the world?</p>
+	</div>
+</div>
+<div class="aboxes" id="answer5" style="visibility: hidden;">
+	<div class="answerBox">
+		<input type="radio" id="id1" name="answer5" value="no"/>
+		<label for="id1" class="answerBoxText">Russian</label><br>
+
+		<input type="radio" id="id2" name="answer5" value="no"/>
+		<label for="id2" class="answerBoxText">German</label><br>
+
+		<input type="radio" id="id3" name="answer5" value="yes"/>
+		<label for="id3" class="answerBoxText">Tamil</label><br>
+
+		<input type="radio" id="id4" name="answer5" value="no"/>
+		<label for="id4" class="answerBoxText">Urdu</label><br>
+	</div>
+
+	<button onclick="check();" id="checkButton">Next</button>
+</div>
+
+
+
+<div class="results" id="results" style="visibility:hidden;"></div>
+<button onclick="nextPage();" class="nextButton">Next</button>
+<div id="question6"></div>
+<div id="answer6"></div>
+
 
 </body>
 </html>
+
+
+

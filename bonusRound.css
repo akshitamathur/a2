@@ -9,6 +9,11 @@
     z-index: -10;
 }
 
+button:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
 .boxes{
     margin-left: 10%;
 }
@@ -49,14 +54,17 @@
 }
 
 .taps {
-    width: 30%;
+    width: 50%;
     margin-left: 17%;
+    margin-top: -7%;
 }
 
 .tap5 {
     margin-top: 75px;
     width: 20%;
     height: 12%;
+    margin-left: 10%;
+    border-radius: 10px;
 }
 
 .tap3 {
@@ -64,10 +72,12 @@
     width: 20%;
     height: 12%;
     float: right;
+    margin-right: -2%;
+    border-radius: 10px;
 }
 
 .jugs {
-    width: 60%;
+    width: 80%;
 }
 
 .jug5 {
@@ -77,8 +87,8 @@
 
 .jug3 {
     float: right;
-    margin-top: 30px;
-    margin-right: 4%
+    margin-top: 4%;
+    margin-right: -2%
 }
 
 .empty5 {
@@ -93,4 +103,35 @@
 .actions {
     width: 50%;
     margin-top: 10px;
+    margin-left: 24%
+}
+
+.right {
+    float: right;
+    margin-right: 12%;
+}
+
+.tapImg {
+    width: 100%;
+}
+
+.heading5 {
+    margin-left: 25%;
+    margin-bottom: 5px;
+}
+
+.heading3 {
+    margin-left: 60%;
+    margin-top: -5%;
+}
+
+.qty5 {
+    margin-top: -4%;
+    margin-left: 12%;
+}
+
+.qty3 {
+    margin-top: -6%;
+    margin-right: 18%;
+    float: right;
 }

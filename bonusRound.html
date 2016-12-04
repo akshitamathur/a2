@@ -7,6 +7,11 @@
 </head>
 <body id="backgroundImage">
 
+    <audio autoplay loop>
+        <source src="sounds/Funky.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
 <div class="boxes">
 
     <div id="knowledgeBox" class="knowledgeBox">
@@ -15,39 +20,37 @@
     </div>
     
     <div id="playArea">
+        <div>
+            <h1 class="heading5">5L</h1>
+            <h1 class="heading3">3L</h1>
+        </div>
         <div id="taps" class="taps">
-            <img id="tap5" class="tap3" src="images/tap.png">
-            <img id="tap3" class="tap5" src="images/tap.png">
+            <button onclick="fill(3)" class="tap3" >
+                <img class="tapImg" id="tap3" src="images/tap.png">
+            </button>
+            <button onclick="fill(5)" class="tap5" >
+                <img class="tapImg" id="tap5" src="images/tap.png">
+            </button>
+        
         </div>
         
         <div id="jugs" class="jugs">
-            <img class="jug5" src="images/jug5litres.png">
-            <img class="jug3" src="images/Jug.png">
+            <img id="jug5" class="jug5" src="images/jug5litres.png">
+            <img id="jug3" class="jug3" src="images/Jug.png">
         </div>
+    
         
         <div class="actions">
-            <button>Empty 5L</button>
-            <button>Empty 3L</button>
+            <button onclick="emptyJug(5);">Empty 5L</button>
+            <button class="right" onclick="emptyJug(3);">Empty 3L</button>
         </div>
+        <h4 id="qty5" class="qty5">0/5</h4>
         <div class="actions">
-            <button>Transfer to 3L</button>
-            <button>Transfer to 5L</button>
+            <button onclick="transferToThree()">Transfer to 3L</button>
+            <button class="right" onclick="transferToFive()">Transfer to 5L</button>
         </div>
+        <h4 id="qty3" class="qty3">0/3</h4>
     </div>
-
-    
-<!-- 
-    <div class="knowledgeBox">
-        <a class="knowledgeBoxText" id="linguistics" href="linguistics.html"></a>
-    </div>
-
-    <div class="knowledgeBox">
-        <a class="knowledgeBoxText" id="social" href="social.html"></a>
-    </div>
-
-    <div class="knowledgeBox">
-        <a class="knowledgeBoxText" id="visual" href="visual.html"></a>
-    </div> -->
 
 </div>
 
