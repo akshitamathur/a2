@@ -1,11 +1,3 @@
-//http://stackoverflow.com/questions/19845167/htmluse-quotes-within-quotes-within-quotes
-
-//https://jsfiddle.net/pvk6p/1248/
-
-//http://www.clipartbest.com/clipart-measuring-jug
-    
-//http://www.clipshrine.com/water-tap-16744-medium.html
-
 window.onload = function() {
     document.getElementById("playArea").style.visibility = "hidden";
 };
@@ -155,6 +147,7 @@ function emptyJug(jug) {
 function win() {
     setTimeout(function() {
         alert("YAY!!!! YOU WON!!!");
+        setCookie("bonusScore", 100, 1000);
         window.location = "end.html";
     }, 500);
 }
@@ -166,6 +159,7 @@ function add() {
         minutes++;
         if (minutes == 3) {
             alert("TIME'S UP! YOU LOST...");
+            setCookie("bonusScore", -100, 1000);
             window.location = "end.html";
         }
     }
@@ -177,4 +171,15 @@ function add() {
 
 function timer() {
     t = setTimeout(add, 1000);
+}
+
+
+
+//Only edit the following function if necessary:
+function setCookie(cname,cvalue,exdays) {  // receives 3 values to set cookie
+    var d = new Date();
+    //d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    d.setTime(d.getTime() + (exdays*1000)); //sets in seconds, not days
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
 }

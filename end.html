@@ -3,25 +3,44 @@
 	<title>And so we reach the end</title>
 	<link rel="stylesheet" type="text/css" href="end.css">
 	<script type="text/javascript" src="end.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,700" rel="stylesheet">
+
 </head>
 
 
 
-<body onload="checkCookie();">
-<!-- 
+<body id="backgroundImage" onload="checkCookie();">
+
 	<audio autoplay loop>
   		<source src="sounds/Funky.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
-	</audio> -->
-	<!-- <h2> This is the end.</h2> -->
+	</audio>
+	
 
+	 <div class="boxes" id="confidence">
+		<div class="startBox">
+			<p class="startBoxText">How did you do? Do you need to <a href="index.html">redeem</a> yourself?</p>
+		</div>
+	</div>
 
-	<p id="musicPoints">music score</p>
-	<p id="socialScore">social score</p>
-	<p id="logisticsScore">logistic score</p>
-	<p id="linguisticsScore">linguistic score</p>
+	 <div class="boxes" id="tv1">
+		<div class="tvBox">
+			<p class="result"> Music Score: <span id="musicPoints">0</span></p>
+			<p class="result"> Social Score: <span id="socialScore">0</span></p>
+			<p class="result"> Logistics Score: <span id="logisticsScore">0</span></p>
+			<p class="result"> Linguistics Score: <span id="linguisticsScore">0</span></p>
+			<p class="result"> Bonus Level Score: <span id="bonusScore">0</span></p>
+<hr>
+			<p class="result"> Total Score: <span id="finalScore">0</span></p>
+			
+		</div>
+	</div>
 
-	<p id="smart">how smart did you say you were?</p>
+	<div class="anchor" id="anchor1" >
+		<img src="images/Anchor.png">
+	</div>
+
 
 </body>
 </html>

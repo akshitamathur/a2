@@ -47,7 +47,7 @@
 }
 
 .answerBox{
-    height: 130px;
+    height: 300px;
     width: 766px;
     background-color: lightgray;
     border: 8px solid black;
@@ -88,7 +88,6 @@
 #checkButton{
     padding: 10px 20px 11px;
     margin-left: 39%;
-    margin-top:12%;
     font-size: 21px;
     background-color: lightpink;
     color: white;

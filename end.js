@@ -22,60 +22,62 @@ function checkCookie() {
     if (music !== "" && music !== " " && music !== null) {
         var musicScore = document.getElementById("musicPoints");
         musicScore.innerHTML = music;
-	}else{
-        alert("ERROR");
-    }
+	}
 
     var social = getCookie("socialScore");
     if (social !== "" && social !== " " && social !== null) {
         var socialScore = document.getElementById("socialScore");
         socialScore.innerHTML = social;
-    }else{
-        alert("ERROR");
-     }
+    }
 
     var logistics = getCookie("logisticsScore");
     if (logistics !== "" && logistics !== " " && logistics !== null) {
         var logisticsScore = document.getElementById("logisticsScore");
         logisticsScore.innerHTML = logistics;
-    }else{
-        alert("ERROR");
-     }
+    }
 
     var linguistics = getCookie("linguisticsScore");
     if (linguistics !== "" && linguistics !== " " && linguistics !== null) {
         var linguisticsScore = document.getElementById("linguisticsScore");
         linguisticsScore.innerHTML = linguistics;
-    }else{
-        alert("ERROR");
-     }
+    }
 
     var bonus = getCookie("bonusScore");
     if (bonus !== "" && bonus !== " " && bonus !== null) {
         var bonusScore = document.getElementById("bonusScore");
         bonusScore.innerHTML = bonus;
-    }else{
-        alert("ERROR");
-     }
+    }
 
      var confidence = getCookie("confidenceLevel");
-    if (confidence !== "" && confidence !== " " && confidence !== null) {
-        var confidenceLevel = document.getElementById("smart");
-        confidenceLevel.innerHTML = "You did alright! Not too shabby! Give yourself some more credit!";
-    }else{
-        alert("ERROR");
-     }
-
-
+    
 
 
      var finalScore = Number(music) + Number(social) + Number(linguistics) + Number(logistics) + Number(bonus);
 
      if(finalScore !== "" && finalScore !== " " && finalScore !== null){
-     document.getElementById("smart").innerHTML = finalScore;
-    }else{
-        alert("ERROR FINAL");
+     document.getElementById("finalScore").innerHTML = finalScore;
     }
+
+
+    // var answer = document.getElementById("confidenceDiv");
+
+    // if(finalScore <= Number(100) && confidence == "novice"){
+    //     answer.innerHTML = "Try harder next time! I'm sure you'll do great!";
+
+    // }else if(finalScore <= Number(100) && confidence == "genius"){
+    //     answer.innerHTML = "It wasn't as easy as you thought now was it, smart pants? Why not try and redeem yourself?";
+
+    // }else if(finalScore >= Number(100) && confidence == "novice"){
+    //     answer.innerHTML = "WOW! Look at you GO! With a score of " + finalScore + "! You need to give yourself some more credit!";
+
+    // }else if(finalScore >= Number(100) && confidence == "genius"){
+    //     answer.innerHTML = "Either you've cheated - or you really are smarter than you look. Well done.";
+    // }else if(finalScore <= Number(100) && confidence == "confident"){
+    //     answer.innerHTML = "Try harder next time! I'm sure you'll do great!";
+    // }else if(finalScore >= Number(100) && confidence == "confident"){
+    //     answer.innerHTML = "WOW! Look at you GO! With a score of " + finalScore + "! You need to give yourself some more credit!";
+
+    // }
 
 
 }

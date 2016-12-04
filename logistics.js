@@ -1,7 +1,3 @@
-window.onload = function opening(){
-// alert("The javascript is loading");
-};
-
 var count = 1;
 var answers = 5;
 var totalScore = 0;
@@ -81,7 +77,7 @@ if(count == 6){
 
 
 function finalResults(){
-	alert("it is inside finalResults");
+	// alert("it is inside finalResults");
 	var deleteQuestion = document.getElementById("question" + count);
 	var deleteAnswer = document.getElementById("answer" + count);
 	var score = document.getElementById("score");
@@ -132,8 +128,8 @@ function finalResults(){
 }
 
 function nextPage(){
-	setCookie("logisticsScore", totalScore, 80);
-	window.location.replace("file:///Users/Akshita/GitHub/a2/chooseTest4.html");
+	setCookie("logisticsScore", totalScore, 1000);
+	window.location.replace("chooseTest4.html");
 }
 
 

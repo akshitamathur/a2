@@ -43,7 +43,7 @@ for(var i = 0; i < result.length; i++) {
    
    if(result[i].checked === true){
        var answer = result[i].value;
-       alert(answer);
+       // alert(answer);
 
        if(answer == "yes"){
 		totalScore += 10;
@@ -77,7 +77,7 @@ if(count == 6){
 
 
 function finalResults(){
-	alert("it is inside finalResults");
+	// alert("it is inside finalResults");
 	var deleteQuestion = document.getElementById("question" + count);
 	var deleteAnswer = document.getElementById("answer" + count);
 	var score = document.getElementById("score");
@@ -128,9 +128,9 @@ function finalResults(){
 }
 
 function nextPage(){
-  alert(totalScore);
-	setCookie("musicScore", totalScore, 80);
-	window.location.replace("file:///Users/Akshita/GitHub/a2/chooseTest2.html");
+  // alert(totalScore);
+	setCookie("musicScore", totalScore, 1000);
+	window.location.replace("chooseTest2.html");
 }
 
 //Only edit the following function if necessary:
