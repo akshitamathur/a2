@@ -102,12 +102,12 @@ function finalQuestion(confidenceLevel){
     
     if (confidenceLevel == "novice" || confidenceLevel == "confident" || confidenceLevel == "genius") {
 		//alert(datasent);
-		setCookie("confidence", confidenceLevel, 10); 
+		setCookie("confidence", confidenceLevel, 80); 
 		window.location.replace("file:///Users/Akshita/GitHub/a2/ChooseTest.html"); 
 		
     } else {
     	confidenceLevel = "genius";
-    	setCookie("confidence", confidenceLevel, 10);
+    	setCookie("confidence", confidenceLevel, 80);
     	window.location.replace("file:///Users/Akshita/GitHub/a2/ChooseTest.html");
     }    
 

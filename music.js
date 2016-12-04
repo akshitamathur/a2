@@ -1,25 +1,3 @@
-window.onload = function opening(){
-// alert("The javascript is loading");
-};
-
-// START - Get the user's name and save it in a cookie
-
-// var yourname = prompt("What is your name?"); //get user's name
-// //you might want to put this prompt into a simple while loop, like the example from w10
-
-// if (yourname != "" && yourname != " " && yourname != null) { 
-// //ensure something reasonable is in username
-//   alert("Hi, " + yourname + " .");
-// } else {  //if something reasonable is not in username, set username to something
-//    alert("Okay, Anonymous!");
-//    yourname = "Anonymous"; 
-// }
-
-// setCookie("theusersname", yourname, 30);  
-// // save the data into the cookie: cookiename, data, cookie expiry in 30 seconds
-
-// // END - Get the user's name and save it in a cookie
-
 var count = 1;
 var answers = 5;
 var totalScore = 0;

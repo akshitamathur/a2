@@ -49,5 +49,36 @@ function checkCookie() {
     }else{
         alert("ERROR");
      }
-       
+
+    var bonus = getCookie("bonusScore");
+    if (bonus !== "" && bonus !== " " && bonus !== null) {
+        var bonusScore = document.getElementById("bonusScore");
+        bonusScore.innerHTML = bonus;
+    }else{
+        alert("ERROR");
+     }
+
+     var confidence = getCookie("confidenceLevel");
+    if (confidence !== "" && confidence !== " " && confidence !== null) {
+        var confidenceLevel = document.getElementById("smart");
+        confidenceLevel.innerHTML = "You did alright! Not too shabby! Give yourself some more credit!";
+    }else{
+        alert("ERROR");
+     }
+
+
+
+
+     var finalScore = Number(music) + Number(social) + Number(linguistics) + Number(logistics) + Number(bonus);
+
+     if(finalScore !== "" && finalScore !== " " && finalScore !== null){
+     document.getElementById("smart").innerHTML = finalScore;
+    }else{
+        alert("ERROR FINAL");
+    }
+
+
 }
+
+
+
